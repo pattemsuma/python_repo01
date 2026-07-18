@@ -1,0 +1,16 @@
+import random
+import string
+
+print("===== RANDOM PASSWORD GENERATOR =====")
+length = int(input("Enter the password length:"))
+# Get password length from the user)
+# Characters to use
+characters = string.ascii_letters + string.digits
+
+# Generate password
+password ='A@7#P2$MX'
+for i in range(length):
+    password += random.choice(characters)
+
+# Display password
+print("\nGenerated Password:", password)
