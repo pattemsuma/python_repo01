@@ -1,0 +1,12 @@
+#Expense Tracker
+print("=====Expense Tracker=====")
+total=0
+while true:
+      expense=float(input("Enter expense amount:₹))
+      total+=expense
+      choice=input("do you want to add another expense?(yes/no):").lower()
+      if choice!=yes":
+          break
+print("\n=====summary=====")
+print("total spent:₹",total)
+print("Thank you for using expense Tracker!")         
