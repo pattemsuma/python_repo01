@@ -1,0 +1,81 @@
+#To-Do List Project
+task = []
+while True:
+    print("\n=====TO-DO LIST=====")
+    print("1.Add Task")
+    print("2.View Tasks")
+    print("3.Remove Task")
+    print("4.exit")
+    choice = input("enter your choice(1-4):")
+    if choice=="1":
+        task = input("Enter the task:")
+        task.append(task)
+        print("Task added successfully!")
+    elif choice =="2":
+        if len(task) ==0:
+            print("No tasks available.")
+        else:
+            print("\nyou Task:")
+            for i,task in enumerate(task,start=1):
+                print(f"{i}.{task}")
+    elif choice =="3":
+        if len(task) ==0:
+            print("No task to remove.")
+        else:
+            print("\nyou Task:")
+            for i,task in enumerate(task,start=1):
+                print(f"{i}.{task}")
+            try:
+                num = int(input("Enter task number to remove:"))
+                if 1<=num<=len(task):
+                    removed=task.pop(num-1)
+                    print(f"{removed}'removed successfully!")
+                else:
+                    print("Invaild task number.")
+            except ValueError:
+                   print("Please enter a valid number.")
+    elif choice =="4":
+        print("Thank you for using the To-Do List!")
+        break
+    else:
+        print("Invalid choice! Please try again.")
+                     
+                
+                
+                       
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
